@@ -272,6 +272,7 @@
 						code : plupload.IO_ERROR,
 						message : 'IO Error.',
 						details : message,
+            responseText: message,
 						file : up.getFile(lookup[file_id])
 					});
 				});

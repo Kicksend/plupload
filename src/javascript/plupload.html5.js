@@ -555,6 +555,7 @@
 										up.trigger('Error', {
 											code : plupload.HTTP_ERROR,
 											message : plupload.translate('HTTP Error.'),
+                      responseText: xhr.responseText,
 											file : file,
 											status : httpStatus
 										});

@@ -273,6 +273,7 @@
 					uploader.trigger('Error', {
 						code : plupload.SECURITY_ERROR,
 						message : plupload.translate('Security error.'),
+            responseText: err.message,
 						details : err.message,
 						file : uploader.getFile(lookup[err.id])
 					});
@@ -282,6 +283,7 @@
 					uploader.trigger('Error', {
 						code : plupload.GENERIC_ERROR,
 						message : plupload.translate('Generic error.'),
+            responseText: err.message,
 						details : err.message,
 						file : uploader.getFile(lookup[err.id])
 					});
@@ -291,6 +293,7 @@
 					uploader.trigger('Error', {
 						code : plupload.IO_ERROR,
 						message : plupload.translate('IO error.'),
+            responseText: err.message,
 						details : err.message,
 						file : uploader.getFile(lookup[err.id])
 					});
@@ -300,6 +303,7 @@
 					uploader.trigger('Error', {
 						code : parseInt(err.code, 10),
 						message : plupload.translate('Image error.'),
+            responseText: err.message,
 						file : uploader.getFile(lookup[err.id])
 					});
 				});
